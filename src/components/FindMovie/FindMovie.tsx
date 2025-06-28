@@ -54,26 +54,6 @@ export const FindMovie: React.FC<Props> = ({ movies, setMovies }) => {
     ? movies.some(movie => movie.imdbId === previewMovie.imdbId)
     : false;
 
-  // const handleAddClick = () => {
-  //   if (!previewMovie) {
-  //     return;
-  //   }
-
-  //   if (alreadyExists) {
-  //     setError('This movie is already in the list');
-  //     // Скидаємо превʼю і поле, щоб кнопка стала disabled і тест пройшов
-  //     setPreviewMovie(null);
-  //     setTitle('');
-
-  //     return;
-  //   }
-
-  //   setMovies(prev => [...prev, previewMovie]);
-  //   setPreviewMovie(null);
-  //   setTitle('');
-  //   setError('');
-  // };
-
   return (
     <>
       <form onSubmit={handleSearchSubmit} className="find-movie">
